@@ -1,14 +1,12 @@
-# new-relic-component
+# New Relic Component
 
-A Clojure library designed to ... well, that part is up to you.
+New Relic component for Integrant library.
 
-## Usage
-
-FIXME
+Easy integration with New Relic API.
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Bruno do Nascimento Maciel
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
