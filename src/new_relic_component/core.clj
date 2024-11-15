@@ -1,6 +1,6 @@
 (ns new-relic-component.core
   (:require [cheshire.core :as json]
-            [common-clj.integrant-components.http-client :as component.http-client]
+            [http-client-component.core :as component.http-client]
             [common-clj.traceability.core :as common-traceability]
             [integrant.core :as ig]
             [medley.core :as medley]

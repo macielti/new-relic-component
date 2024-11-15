@@ -5,6 +5,12 @@ of [keepachangelog.com](http://keepachangelog.com/).
 
 ## Unreleased
 
+## 0.2.0 - 2024-11-15
+
+### Changed
+
+- Bump common-clj.
+
 ## 0.1.0 - 2024-11-08
 
 ### Added
