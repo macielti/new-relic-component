@@ -1,3 +1,6 @@
+![Compatible with GraalVM](https://img.shields.io/badge/compatible_with-GraalVM-green)
+
+
 # New Relic Component
 
 New Relic component for Integrant library.
