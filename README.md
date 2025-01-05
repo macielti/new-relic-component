@@ -1,4 +1,4 @@
-[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.macielti/http-client-component.svg)](https://clojars.org/net.clojars.macielti/http-client-component)
+[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.macielti/new-relic-component.svg)](https://clojars.org/net.clojars.macielti/new-relic-component)
 ![Compatible with GraalVM](https://img.shields.io/badge/compatible_with-GraalVM-green)
 
 # New Relic Component
