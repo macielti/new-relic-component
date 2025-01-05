@@ -1,7 +1,7 @@
 (ns new-relic-component.core
   (:require [cheshire.core :as json]
-            [http-client-component.core :as component.http-client]
             [common-clj.traceability.core :as common-traceability]
+            [http-client-component.core :as component.http-client]
             [integrant.core :as ig]
             [medley.core :as medley]
             [taoensso.timbre :as log]))
@@ -14,8 +14,8 @@
                (let [stacktrace-str (if-let [pr (:pr-stacktrace opts)]
                                       #(with-out-str (pr %))
                                       #(log/default-output-error-fn
-                                         {:?err        %
-                                          :output-opts {:stacktrace-fonts {}}}))
+                                        {:?err        %
+                                         :output-opts {:stacktrace-fonts {}}}))
                      entry (medley/assoc-some {:cid       (common-traceability/current-correlation-id)
                                                :service   service
                                                :level     (str (name (:level data)))
@@ -37,9 +37,9 @@
   [_ {:keys [components]}]
   (log/info :starting ::new-relic)
   {:timbre (log/merge-config!
-             {:appenders {:new-relic-http (new-relic-http-appender (-> components :config :new-relic-api-key)
-                                                                   (-> components :config :service-name)
-                                                                   (:http-client components))}})})
+            {:appenders {:new-relic-http (new-relic-http-appender (-> components :config :new-relic-api-key)
+                                                                  (-> components :config :service-name)
+                                                                  (:http-client components))}})})
 
 (defmethod ig/halt-key! ::new-relic
   [_ _]

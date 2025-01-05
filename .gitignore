@@ -13,3 +13,6 @@ pom.xml.asc
 .hg/
 /.idea/
 new-relic-component.iml
+/.clj-kondo/.cache/
+/.clj-kondo/imports/
+/.lsp/.cache/
