@@ -26,12 +26,13 @@
                                               :error (some-> (:?err data) str)
                                               :stacktrace (some-> (:?err data) (stacktrace-str)))]
 
-                 (component.http-client/request! {:url     "https://log-api.newrelic.com/log/v1"
-                                                  :method  :post
-                                                  :payload {:headers {"Content-Type" "application/json"
-                                                                      "Api-Key"      api-key}
-                                                            :body    (json/encode entry)}}
-                                                 http-client)))})
+                 @(component.http-client/request! {:url         "https://log-api.newrelic.com/log/v1"
+                                                   :method      :post
+                                                   :endpoint-id :post-log-new-relic
+                                                   :payload     {:headers {"Content-Type" "application/json"
+                                                                           "Api-Key"      api-key}
+                                                                 :body    (json/encode entry)}}
+                                                  http-client)))})
 
 (defmethod ig/init-key ::new-relic
   [_ {:keys [components]}]

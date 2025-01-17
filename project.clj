@@ -1,4 +1,4 @@
-(defproject net.clojars.macielti/new-relic-component "0.2.0"
+(defproject net.clojars.macielti/new-relic-component "0.2.1"
 
   :description "New Relic component for Clojure applications"
 
@@ -10,8 +10,8 @@
   :dependencies [[org.clojure/clojure "1.12.0"]
                  [integrant "0.13.1"]
                  [com.taoensso/timbre "6.6.1"]
-                 [net.clojars.macielti/http-client-component "0.1.0"]
-                 [net.clojars.macielti/common-clj "38.71.71"]
+                 [net.clojars.macielti/http-client-component "1.1.0"]
+                 [net.clojars.macielti/common-clj "42.74.74"]
                  [dev.weavejester/medley "1.8.1"]]
 
   :profiles {:dev {:resource-paths ^:replace ["test/resources"]
@@ -19,7 +19,7 @@
                    :test-paths     ^:replace ["test/unit" "test/integration" "test/helpers"]
 
                    :plugins        [[lein-cloverage "1.2.4"]
-                                    [com.github.clojure-lsp/lein-clojure-lsp "1.4.13"]
+                                    [com.github.clojure-lsp/lein-clojure-lsp "1.4.15"]
                                     [com.github.liquidz/antq "RELEASE"]]
 
                    :dependencies   [[hashp "0.2.2"]]
