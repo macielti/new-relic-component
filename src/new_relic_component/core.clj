@@ -16,7 +16,7 @@
                                       #(log/default-output-error-fn
                                         {:?err        %
                                          :output-opts {:stacktrace-fonts {}}}))
-                     entry (medley/assoc-some {:cid       (common-traceability/current-correlation-id)
+                     entry (medley/assoc-some {:cid       (common-traceability/correlation-id-appended!)
                                                :service   service
                                                :level     (str (name (:level data)))
                                                :log       (str (force (:msg_ data)))

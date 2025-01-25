@@ -1,4 +1,4 @@
-(defproject net.clojars.macielti/new-relic-component "0.2.1"
+(defproject net.clojars.macielti/new-relic-component "1.2.1"
 
   :description "New Relic component for Clojure applications"
 
@@ -11,7 +11,7 @@
                  [integrant "0.13.1"]
                  [com.taoensso/timbre "6.6.1"]
                  [net.clojars.macielti/http-client-component "1.1.0"]
-                 [net.clojars.macielti/common-clj "42.74.74"]
+                 [net.clojars.macielti/common-clj "43.74.74"]
                  [dev.weavejester/medley "1.8.1"]]
 
   :profiles {:dev {:resource-paths ^:replace ["test/resources"]
