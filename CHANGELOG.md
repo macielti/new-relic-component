@@ -3,7 +3,11 @@
 All notable changes to this project will be documented in this file. This change log follows the conventions
 of [keepachangelog.com](http://keepachangelog.com/).
 
-## Unreleased
+## 1.2.2 - 2026-03-01
+
+### Changed
+
+- Bump dependencies.
 
 ## 1.2.1 - 2025-01-25
 
@@ -27,4 +31,4 @@ of [keepachangelog.com](http://keepachangelog.com/).
 
 ### Added
 
-- Added New Relic integrat component.
+- Added New Relic integrant component.

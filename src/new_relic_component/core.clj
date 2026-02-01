@@ -1,7 +1,7 @@
 (ns new-relic-component.core
   (:require [cheshire.core :as json]
             [common-clj.traceability.core :as common-traceability]
-            [http-client-component.core :as component.http-client]
+            [http-client-component.with-httpkit-client :as component.http-client]
             [integrant.core :as ig]
             [medley.core :as medley]
             [taoensso.timbre :as log]))
@@ -26,9 +26,9 @@
                                               :error (some-> (:?err data) str)
                                               :stacktrace (some-> (:?err data) (stacktrace-str)))]
 
-                 @(component.http-client/request! {:url         "https://log-api.newrelic.com/log/v1"
+                 @(component.http-client/request! {:endpoint    "https://log-api.newrelic.com/log/v1"
                                                    :method      :post
-                                                   :endpoint-id :post-log-new-relic
+                                                   :endpoint-id :send-log-to-new-relic
                                                    :payload     {:headers {"Content-Type" "application/json"
                                                                            "Api-Key"      api-key}
                                                                  :body    (json/encode entry)}}
