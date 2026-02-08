@@ -1,3 +1,3 @@
-# Introduction to new-relic-component
+# Introduction to New Relic
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)

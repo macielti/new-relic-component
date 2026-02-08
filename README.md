@@ -1,9 +1,9 @@
-[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.macielti/new-relic-component.svg)](https://clojars.org/net.clojars.macielti/new-relic-component)
+[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.macielti/new-relic.svg)](https://clojars.org/net.clojars.macielti/new-relic)
 ![Compatible with GraalVM](https://img.shields.io/badge/compatible_with-GraalVM-green)
 
-# New Relic Component
+# New Relic
 
-New Relic component for Integrant library.
+New Relic integrant component.
 
 Easy integration with New Relic API.
 
