@@ -1,10 +1,14 @@
 (ns new-relic-component.core
   (:require [cheshire.core :as json]
+            [clojure.string :as str]
             [common-clj.traceability.core :as common-traceability]
             [http-client-component.with-httpkit-client :as component.http-client]
             [integrant.core :as ig]
             [medley.core :as medley]
             [taoensso.timbre :as log]))
+
+(defn ^:private log-key [data]
+  (-> data :vargs first (str/split #" ") first str (str/replace ":" "")))
 
 (defn new-relic-http-appender
   [api-key service http-client & [opts]]
@@ -21,7 +25,7 @@
                                                :level     (str (name (:level data)))
                                                :log       (str (force (:msg_ data)))
                                                :namespace (str (:?ns-str data))
-                                               :log-key   (-> data :vargs first str)
+                                               :log-key   (log-key data)
                                                :hostname  (str (force (:hostname_ data)))}
                                               :error (some-> (:?err data) str)
                                               :stacktrace (some-> (:?err data) (stacktrace-str)))]

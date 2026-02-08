@@ -1,6 +1,6 @@
-(defproject net.clojars.macielti/new-relic-component "1.2.2"
+(defproject net.clojars.macielti/new-relic-component "1.2.3"
 
-  :description "New Relic component for Clojure applications"
+  :description "DEPRECATED - New Relic component for Clojure applications - Use net.clojars.macielti/new-relic instead."
 
   :url "https://github.com/macielti/new-relic-component"
 

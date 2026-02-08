@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. This change log follows the conventions
 of [keepachangelog.com](http://keepachangelog.com/).
 
+## 1.2.3 - 2026-02-08
+
+### Fixed
+
+- Fix log key extraction.
+
+### Changed
+
+- Prepare to deprecate this libs name and rename to `net.clojars.macielti/new-relic`
+
 ## 1.2.2 - 2026-02-01
 
 ### Changed
