@@ -12,7 +12,7 @@ pom.xml.asc
 .hgignore
 .hg/
 /.idea/
-new-relic-component.iml
 /.clj-kondo/.cache/
 /.clj-kondo/imports/
 /.lsp/.cache/
+/new-relic.iml

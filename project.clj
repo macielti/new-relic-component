@@ -1,8 +1,8 @@
-(defproject net.clojars.macielti/new-relic-component "1.2.3"
+(defproject net.clojars.macielti/new-relic "0.1.0"
 
-  :description "DEPRECATED - New Relic component for Clojure applications - Use net.clojars.macielti/new-relic instead."
+  :description "New Relic integrant component for Clojure applications."
 
-  :url "https://github.com/macielti/new-relic-component"
+  :url "https://github.com/macielti/new-relic"
 
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url  "https://www.eclipse.org/legal/epl-2.0/"}
